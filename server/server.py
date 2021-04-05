@@ -5,7 +5,7 @@ import threading
 import time
 # device's IP address
 SERVER_HOST = "0.0.0.0"
-SERVER_PORT = 5001
+SERVER_PORT = 4466
 # receive 4096 bytes each time
 BUFFER_SIZE = 4096
 SEPARATOR = "<SEPARATOR>"
@@ -51,7 +51,7 @@ while True:
     s = socket.socket()
     # bind the socket to our local address
     s.bind((SERVER_HOST, SERVER_PORT))
-    s.listen(5)
+    s.listen()
     print(f"[*] Listening as {SERVER_HOST}:{SERVER_PORT}")
     # accept connection if there is any
     client_socket, address = s.accept() 
