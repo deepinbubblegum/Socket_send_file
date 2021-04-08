@@ -136,6 +136,7 @@ def main():
         logging.basicConfig(format='%(levelname)s: %(name)s: %(message)s', level=logging.WARNING)
         callback_obj = gp.check_result(gp.use_python_logging())
         intiCamera_list()
+        time.sleep(1)
 
 def send_files(filename):
         # filename = "data.csv"
