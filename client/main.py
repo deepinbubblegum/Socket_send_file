@@ -42,7 +42,7 @@ def rename_find(path_file):
         for image_file in arr:
             arr = os.listdir(path_file)
             for image_file in arr:
-                if image_file.endswith('.jpg'):
+                if image_file.endswith('.jpg') or image_file.endswith('.JPG'):
                     image = Image.open(path_file + "/" + image_file)
                     exifdata = image.getexif()
                     list = {}
